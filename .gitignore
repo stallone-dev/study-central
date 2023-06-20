@@ -11,6 +11,9 @@
 *.tar
 *.zip
 
+# Non gitabble docs #
+priv_*.*
+
 # OS generated files #
 .DS_Store
 .DS_Store?
