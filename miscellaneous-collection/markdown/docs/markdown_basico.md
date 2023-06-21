@@ -2,8 +2,8 @@
 title: Introdução ao Markdown
 author: Stallone L. de Souza
 comment: Minhas anotações pessoais sobre introdução ao Markdown.
-start_annotations: 21/06/23
-finish_annotations: xx/06/23
+start_annotations: 20/06/23
+finish_annotations: 21/06/23
 ---
 
 # Introdução ao Markdown
@@ -15,7 +15,7 @@ finish_annotations: xx/06/23
   - [📝 - Anotações gerais](#---anotações-gerais)
     - [**O que é markdown?**](#o-que-é-markdown)
     - [**Como utilizar o Markdown?**](#como-utilizar-o-markdown)
-    - [**Lista de símbolos semânticos**](#lista-de-símbolos-semânticos)
+    - [**Lista de tags Markdown**](#lista-de-tags-markdown)
     - [**Exemplos de uso**](#exemplos-de-uso)
       - [Título de exemplo](#título-de-exemplo)
   - [🔗 - Referências](#---referências)
@@ -47,7 +47,7 @@ Por conta de sua sintaxe simples, o Markdown se tornou popular no âmbito da doc
    - Ex: `README.md`
 2. Começar a escrever utilizando os símbolos semânticos
 
-### **Lista de símbolos semânticos**
+### **Lista de tags Markdown**
 Os principais símbolos semânticos utilizados são estes:
 
 
@@ -69,23 +69,29 @@ Os principais símbolos semânticos utilizados são estes:
 
 
 ### **Exemplos de uso**
-> `# -- Títulos`
+**# -- Títulos**
 
 #### Título de exemplo
-
-> `** -- Ênfase strong`
+---
+**\*\* -- Ênfase strong**
 
 **Texto em negrito**
 
-> `* -- Ênfase itálico`
+---
+
+**\* -- Ênfase itálico**
 
 *Texto em itálico*
 
-> `*** -- Ênfase strong + itálico`
+---
+
+**\*\*\* -- Ênfase strong + itálico**
 
 ***Texto em negrito e itálico***
 
-> `- -- Lista não-ordenada`
+---
+
+**- -- Lista não-ordenada**
 
 - Item 1
 - Item 2
@@ -93,26 +99,33 @@ Os principais símbolos semânticos utilizados são estes:
   - Item 2.2
     - Item 2.2.1
 
-> `1. -- Lista ordenada`
-1. Item 1
-2. Item 2
+---
+
+**1. -- Lista ordenada**
+2. Item 1
+3. Item 2
    1. Item 2.1
    2. Item 2.2
       1. Item 2.2.1
 
+---
 
-> `- [ ] -- To-do`
+**- [ ] -- To-do**
 
 - [ ] Item 1
 - [ ] Item 2
 - [x] Item 3
 
-> `> -- Bloco de citação`
+---
+
+**> -- Bloco de citação**
 
 > Esta é uma citação
 >> Esta citação está aninhada
 
-> ` ``` -- Bloco de código`
+---
+
+**``` -- Bloco de código**
 
 ```
 msg = "Este é um bloco de código
@@ -123,18 +136,21 @@ print(msg)
 const msg = "Este é um bloco formatado para JavaScrit"
 console.log(msg)
 ```
+---
 
-> `--- -- Linha de divisão horizontal`
+**--- -- Linha de divisão horizontal**
 
 ---
 
-> `[ zz ]( link ) -- Link externo`
+**\[ zz ]( link ) -- Link externo**
 
 [Exemplo de link](https://www.w3schools.com/html/html_emojis.asp)
 
 [Exemplo de link com texto auxiliar](https://emojipedia.org/face-with-tears-of-joy "Rindo para não chorar")
 
-> `![ zz ]( link ) -- Imagem linkada`
+---
+
+**\!\[ zz ]( link ) -- Imagem linkada**
 
 ![Exemplo de imagem](../assets/emoji_arrogante.png)
 ![Exemplo de imagem com texto auxiliar](../assets/emoji_tranquilo.png "Bixo tranquilo")
