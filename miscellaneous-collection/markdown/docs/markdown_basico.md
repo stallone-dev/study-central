@@ -8,22 +8,26 @@ finish_annotations: xx/06/23
 
 # Introdução ao Markdown
 
-## 📜 - Resumo
-> texto
->
-> texto
-
 ## 🔖 - Links rápidos
+- [Introdução ao Markdown](#introdução-ao-markdown)
+  - [� - Links rápidos](#---links-rápidos)
+  - [👀 - Conclusão pessoal](#---conclusão-pessoal)
+  - [📝 - Anotações gerais](#---anotações-gerais)
+    - [**O que é markdown?**](#o-que-é-markdown)
+    - [**Como utilizar o Markdown?**](#como-utilizar-o-markdown)
+    - [**Lista de símbolos semânticos**](#lista-de-símbolos-semânticos)
+    - [**Exemplos de uso**](#exemplos-de-uso)
+      - [Título de exemplo](#título-de-exemplo)
+  - [🔗 - Referências](#---referências)
+
 ---
 
-## 🔨 - Exemplos
+## 👀 - Conclusão pessoal
+*O Markdown é uma excelente ferramenta para se introduzir às estruturas fundamentais da web, dos documentos virtuais e dos editores de texto.*
 
-```
-[teste](teste)
+*Como ferramenta para construção em definitivo, talvez utilizar o HTML junto ao Markdown, incorporando tags complexas junto da sintaxe simples que ele oferece.*
 
-```
-
-## 👀 - Observações
+*Neste momento, me parece uma boa ferramenta para fazer minhas anotações neste centro de estudos.*
 
 ---
 
@@ -43,25 +47,97 @@ Por conta de sua sintaxe simples, o Markdown se tornou popular no âmbito da doc
    - Ex: `README.md`
 2. Começar a escrever utilizando os símbolos semânticos
 
-### **Símbolos semânticos e seus usos**
+### **Lista de símbolos semânticos**
 Os principais símbolos semânticos utilizados são estes:
 
-| TAG | EQUIVALÊNCIA HMTL | DESCRIÇÃO |
-| :-:  | :-: | :-: |
-| # | \<h1> | Título 1 |
-| ## | \<h2>| Título 2 |
-| \** | \<strong> | ênfase negrito |
-| \* | \<em> | ênfase itálico |
-| - | \<ul>\<tr> | lista desordenada |
-| n. | \<ol>\<tr> | lista ordenada |
-| -[ ] | \<input> | to-ds de leitura apenas |
+
+>|        TAG        |  EQUIVALÊNCIA HTML  | DESCRIÇÃO                  |
+>| :---------------: | :-----------------: | :------------------------- |
+>|         #         |        \<H1>        | Título 1                   |
+>|        ##         |        \<H2>        | Título 2                   |
+>|        \**        |      \<strong>      | Ênfase negrito             |
+>|        \*         |        \<em>        | Ênfase itálico             |
+>|         -         |        \<ul>        | Lista desordenada          |
+>|        1.         |        \<ol>        | Lista ordenada             |
+>|       \- [ ]      |      \<input>       | To-do simplificado         |
+>|         >         |    \<blockquote>    | Citação de conteúdo        |
+>|        ```        |       \<code>       | Exemplo de código          |
+>|        ---        |         \<>         | Linha divisória horizontal |
+>|  \[ zz ]( link )  |    \<a href="">     | Link para conteúdo         |
+>| \!\[ zz ]( link ) |   \<img href="">    | Link para imagem           |
+>|     \:emoji\:     | \<p> &#XXXXXX \<\p> | Emojis 😂                  |
 
 
-> citação
+### **Exemplos de uso**
+> `# -- Títulos`
 
-- lista 
-1. lista ordenada
-- [ ] item marcável
+#### Título de exemplo
+
+> `** -- Ênfase strong`
+
+**Texto em negrito**
+
+> `* -- Ênfase itálico`
+
+*Texto em itálico*
+
+> `*** -- Ênfase strong + itálico`
+
+***Texto em negrito e itálico***
+
+> `- -- Lista não-ordenada`
+
+- Item 1
+- Item 2
+  - Item 2.1
+  - Item 2.2
+    - Item 2.2.1
+
+> `1. -- Lista ordenada`
+1. Item 1
+2. Item 2
+   1. Item 2.1
+   2. Item 2.2
+      1. Item 2.2.1
+
+
+> `- [ ] -- To-do`
+
+- [ ] Item 1
+- [ ] Item 2
+- [x] Item 3
+
+> `> -- Bloco de citação`
+
+> Esta é uma citação
+>> Esta citação está aninhada
+
+> ` ``` -- Bloco de código`
+
+```
+msg = "Este é um bloco de código
+print(msg)
+```
+
+```javascript
+const msg = "Este é um bloco formatado para JavaScrit"
+console.log(msg)
+```
+
+> `--- -- Linha de divisão horizontal`
+
+---
+
+> `[ zz ]( link ) -- Link externo`
+
+[Exemplo de link](https://www.w3schools.com/html/html_emojis.asp)
+
+[Exemplo de link com texto auxiliar](https://emojipedia.org/face-with-tears-of-joy "Rindo para não chorar")
+
+> `![ zz ]( link ) -- Imagem linkada`
+
+![Exemplo de imagem](../assets/emoji_arrogante.png)
+![Exemplo de imagem com texto auxiliar](../assets/emoji_tranquilo.png "Bixo tranquilo")
 
 ---
 
