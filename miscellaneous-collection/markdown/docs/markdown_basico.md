@@ -10,7 +10,7 @@ finish_annotations: xx/06/23
 
 ## 🔖 - Links rápidos
 - [Introdução ao Markdown](#introdução-ao-markdown)
-  - [� - Links rápidos](#---links-rápidos)
+  - [🔖 - Links rápidos](#---links-rápidos)
   - [👀 - Conclusão pessoal](#---conclusão-pessoal)
   - [📝 - Anotações gerais](#---anotações-gerais)
     - [**O que é markdown?**](#o-que-é-markdown)
@@ -51,21 +51,21 @@ Por conta de sua sintaxe simples, o Markdown se tornou popular no âmbito da doc
 Os principais símbolos semânticos utilizados são estes:
 
 
->|        TAG        |  EQUIVALÊNCIA HTML  | DESCRIÇÃO                  |
->| :---------------: | :-----------------: | :------------------------- |
->|         #         |        \<H1>        | Título 1                   |
->|        ##         |        \<H2>        | Título 2                   |
->|        \**        |      \<strong>      | Ênfase negrito             |
->|        \*         |        \<em>        | Ênfase itálico             |
->|         -         |        \<ul>        | Lista desordenada          |
->|        1.         |        \<ol>        | Lista ordenada             |
->|       \- [ ]      |      \<input>       | To-do simplificado         |
->|         >         |    \<blockquote>    | Citação de conteúdo        |
->|        ```        |       \<code>       | Exemplo de código          |
->|        ---        |         \<>         | Linha divisória horizontal |
->|  \[ zz ]( link )  |    \<a href="">     | Link para conteúdo         |
->| \!\[ zz ]( link ) |   \<img href="">    | Link para imagem           |
->|     \:emoji\:     | \<p> &#XXXXXX \<\p> | Emojis 😂                  |
+|        TAG        |  EQUIVALÊNCIA HTML  | DESCRIÇÃO                  |
+| :---------------: | :-----------------: | :------------------------- |
+|         #         |        \<H1>        | Título 1                   |
+|        ##         |        \<H2>        | Título 2                   |
+|        \**        |      \<strong>      | Ênfase negrito             |
+|        \*         |        \<em>        | Ênfase itálico             |
+|         -         |        \<ul>        | Lista desordenada          |
+|        1.         |        \<ol>        | Lista ordenada             |
+|       \- [ ]      |      \<input>       | To-do simplificado         |
+|         >         |    \<blockquote>    | Citação de conteúdo        |
+|        ```        |       \<code>       | Exemplo de código          |
+|        ---        |         \<>         | Linha divisória horizontal |
+|  \[ zz ]( link )  |    \<a href="">     | Link para conteúdo         |
+| \!\[ zz ]( link ) |   \<img href="">    | Link para imagem           |
+|     \:emoji\:     | \<p> &#XXXXXX \<\p> | Emojis 😂                  |
 
 
 ### **Exemplos de uso**
