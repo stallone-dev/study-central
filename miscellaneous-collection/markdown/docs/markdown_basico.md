@@ -6,19 +6,18 @@ start_annotations: 20/06/23
 finish_annotations: 21/06/23
 ---
 
-# Introdução ao Markdown
+# Introdução ao Markdown <!-- omit from toc -->
 
-## 🔖 - Links rápidos
-- [Introdução ao Markdown](#introdução-ao-markdown)
-  - [🔖 - Links rápidos](#---links-rápidos)
-  - [👀 - Conclusão pessoal](#---conclusão-pessoal)
-  - [📝 - Anotações gerais](#---anotações-gerais)
-    - [**O que é markdown?**](#o-que-é-markdown)
-    - [**Como utilizar o Markdown?**](#como-utilizar-o-markdown)
-    - [**Lista de tags Markdown**](#lista-de-tags-markdown)
-    - [**Exemplos de uso**](#exemplos-de-uso)
-      - [Título de exemplo](#título-de-exemplo)
-  - [🔗 - Referências](#---referências)
+## 🔖 - Links rápidos <!-- omit from toc -->
+- [👀 - Conclusão pessoal](#---conclusão-pessoal)
+- [🔨 - Utilitários](#---utilitários)
+- [📝 - Anotações gerais](#---anotações-gerais)
+  - [**O que é markdown?**](#o-que-é-markdown)
+  - [**Como utilizar o Markdown?**](#como-utilizar-o-markdown)
+  - [**Lista de tags Markdown**](#lista-de-tags-markdown)
+  - [**Exemplos de uso**](#exemplos-de-uso)
+    - [Título de exemplo](#título-de-exemplo)
+- [🔗 - Referências](#---referências)
 
 ---
 
@@ -28,6 +27,16 @@ finish_annotations: 21/06/23
 *Como ferramenta para construção em definitivo, talvez utilizar o HTML junto ao Markdown, incorporando tags complexas junto da sintaxe simples que ele oferece.*
 
 *Neste momento, me parece uma boa ferramenta para fazer minhas anotações neste centro de estudos.*
+
+---
+
+## 🔨 - Utilitários
+- Para formatação rápida no VS Code:
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- Para melhor visualização no VS Code:
+  - [MDX](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx)
+- Para seleção de emojis:
+  - [Emojipédia](https://emojipedia.org/pt/smileys)
 
 ---
 
