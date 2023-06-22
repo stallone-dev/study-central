@@ -2,13 +2,13 @@
 title: Introdução ao Markdown
 author: Stallone L. de Souza
 comment: Minhas anotações pessoais sobre introdução ao Markdown.
-start_annotations: 20/06/23
-finish_annotations: 21/06/23
+start_code: 20/06/23
+finish_code: 21/06/23
 ---
 
 # Introdução ao Markdown <!-- omit from toc -->
 
-## 🔖 - Links rápidos <!-- omit from toc -->
+## 🔖 - Índice <!-- omit from toc -->
 - [👀 - Conclusão pessoal](#---conclusão-pessoal)
 - [🔨 - Utilitários](#---utilitários)
 - [📝 - Anotações gerais](#---anotações-gerais)
@@ -161,8 +161,8 @@ console.log(msg)
 
 **\!\[ zz ]( link ) -- Imagem linkada**
 
-![Exemplo de imagem](../assets/emoji_arrogante.png)
-![Exemplo de imagem com texto auxiliar](../assets/emoji_tranquilo.png "Bixo tranquilo")
+![Exemplo de imagem](../assets/ast_markdown_basico_emoji_arrogante.png)
+![Exemplo de imagem com texto auxiliar](../assets/ast_markdown_basico_emoji_tranquilo.png "Bixo tranquilo")
 
 ---
 
