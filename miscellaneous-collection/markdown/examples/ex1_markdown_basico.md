@@ -46,9 +46,9 @@ Não sei até onde estou "domesticado", mas vou colocar alguns alarmes e alertas
   - Docs
     - **{tema}_{nível}.md**
   - Assets
-    - **ast_{tema}\_{nível}\_{descricao}**
+    - **{tema}\_{nível}\_{descricao}.\***
   - Examples
-    - **ex{número}_{tema}\_{nível}**
+    - **ex{número}_{tema}\_{nível}.\***
 
 Assim, acredito que ficará fácil de me localizar no futuro.
 
