@@ -213,12 +213,12 @@ Elementos do formulário que são interativos para o usuário da página
 
 ### Exemplos de uso das tags
 
-- [Exemplo geral](./../examples/html_basico_exemplo_geral.html)
-- [Estrutura textual básica](./../examples/html_basico_elementos_textuais.html)
-- [Estrutura de mídia básica](./../examples/html_basico_midia.html)
-- [Estrutura de containers básica](./../examples/html_basico_containers.html)
-- [Estrutura de metadados básica](./../examples/html_basico_metadados.html)
-- [Estrutura de formulário básica](./../examples/html_basico_formulario.html)
+- [Exemplo geral](./../examples/ex_html_basico_exemplo_geral.html)
+- [Estrutura textual básica](./../examples/ex_html_basico_elementos_textuais.html)
+- [Estrutura de mídia básica](./../examples/ex_html_basico_midia.html)
+- [Estrutura de containers básica](./../examples/ex_html_basico_containers.html)
+- [Estrutura de metadados básica](./../examples/ex_html_basico_metadados.html)
+- [Estrutura de formulário básica](./../examples/ex_html_basico_formulario.html)
 
 ---
 
