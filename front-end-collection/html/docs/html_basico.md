@@ -1,9 +1,9 @@
 ---
 title: Introdução ao HTML
 author: Stallone L. de Souza
-comment: Minhas anotações sobre o HTML básico
-start_code: 22/06/23
-finish_code: 24/06/23
+description: Minhas anotações sobre o HTML básico
+start_study: 22/06/23
+finish_study: 24/06/23
 ---
 
 # Introdução ao HTML <!-- omit from toc -->

@@ -1,9 +1,9 @@
 ---
 title: Introdução ao Markdown
 author: Stallone L. de Souza
-comment: Minhas anotações pessoais sobre introdução ao Markdown.
-start_code: 20/06/23
-finish_code: 21/06/23
+description: Minhas anotações pessoais sobre introdução ao Markdown.
+start_study: 20/06/23
+finish_study: 21/06/23
 ---
 
 # Introdução ao Markdown <!-- omit from toc -->

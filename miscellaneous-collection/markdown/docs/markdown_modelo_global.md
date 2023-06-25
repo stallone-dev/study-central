@@ -1,9 +1,9 @@
 ---
-title: Estrutura-base para meus aruivos Markdown
+title: 
 author: Stallone L. de Souza
-comment: Minha estrutura pessoal para arquivos os arquivos Markdown deste repositório
-start_code: XX/XX/23
-finish_code: XX/XX/23
+description: 
+start_study: XX/XX/23
+finish_study: XX/XX/23
 ---
 
 # \[Título geral] <!-- omit from toc -->
