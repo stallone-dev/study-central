@@ -1,6 +1,11 @@
 # Environment variables #
 .env
 
+# Environment context #
+node_modules
+*.log
+*.clasp.json
+
 # Packages #
 *.7z
 *.dmg
