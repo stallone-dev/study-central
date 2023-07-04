@@ -18,7 +18,9 @@ finish_study: 24/06/23
     - [**2. Containers de conteúdo**](#2-containers-de-conteúdo)
     - [**3. Agregadores de mídia**](#3-agregadores-de-mídia)
     - [**4. Elementos textuais**](#4-elementos-textuais)
-    - [**5. Formulários**](#5-formulários)
+    - [**5. Listas**](#5-listas)
+    - [**6. Tabelas**](#6-tabelas)
+    - [**7. Formulários**](#7-formulários)
   - [Exemplos de uso das tags](#exemplos-de-uso-das-tags)
 - [🔗 - Referências](#---referências)
 
@@ -75,6 +77,7 @@ São elas:
 | \<style> | Estilização dos conteúdos da página                              |
 | \<link>  | Acessar e pré-carregar conteúdos externos \[como CSSs e Scripts] |
 
+<br>
 
 #### **2. Containers de conteúdo**
 
@@ -103,7 +106,13 @@ Porém, se viu a necessidade de se ter tags mais *"semânticas"*, mais descritiv
 <main>Seção principal da página</main>
 <article>Seção complementar/reutilizável</article>
 <span>Seção dentro de uma linha</span>
+
+<!--Espaço de conteúdo oculto/detalhado-->
+<details>Seção de conteúdo oculto, mas que pode ser expandido</details>
+<summary>Palavra ou frase que serivrá de cabeçalho para esse conteúdo</summary>
 ```
+
+<br>
 
 #### **3. Agregadores de mídia**
 
@@ -137,6 +146,7 @@ São elas:
 
 <script>Scripts de JavaScript</script>
 ```
+<br>
 
 #### **4. Elementos textuais**
 
@@ -180,7 +190,334 @@ Exemplos são:
 <del>Enfatização, parecido com Tachado</del>
 ```
 
-#### **5. Formulários**
+<br>
+
+#### **5. Listas**
+
+Listas são formas rápidas de organizar conteúdos, onde os elementos da lista são valores que devem ser destacados como numa lista de compras: pontuados, ordenados e aninhados.
+
+No HTML uma lista é representada de 2 maneiras principais: Uma **lista ordenada**, marcada pela tag `<ol>`, e uma **lista desordenada**, representada pela tag `<ul>`. A diferença entre os dois é a forma de marcação entre os dois, onde a lista ordenada segue uma sequência lógico-numérica, enquano a desorneda é mais uma "pontuação" de elementos variados.
+
+Por exemplo:
+
+```html
+<strong>Lista ordenada</strong>
+<ol>
+  <li>Item ordenado 1</li>
+  <li>Item ordenado 2</li>
+  <li>Item ordenado 3</li>
+  <li>Item ordenado 4</li>
+</ol>
+```
+---
+
+<strong>Lista ordenada</strong>
+<ol>
+  <li>Item ordenado 1</li>
+  <li>Item ordenado 2</li>
+  <li>Item ordenado 3</li>
+  <li>Item ordenado 4</li>
+</ol>
+
+---
+
+Bem como:
+
+```html
+<strong>Lista desordenada</strong>
+<ul>
+  <li>Item desordenado 1</li>
+  <li>Item desordenado 2</li>
+  <li>Item desordenado 3</li>
+  <li>Item desordenado 4</li>
+</ul>
+```
+
+---
+
+<strong>Lista desordenada</strong>
+<ul>
+  <li>Item desordenado 1</li>
+  <li>Item desordenado 2</li>
+  <li>Item desordenado 3</li>
+  <li>Item desordenado 4</li>
+</ul>
+
+---
+
+Para **aninhar elementos** numa lista, basicamente adiciona-se um novo `<ul>//<ol>` na linha da lista, assim ela é representada como um **aninhamento**.
+
+Por exemplo:
+
+```html
+<strong>Lista aninhada</strong>
+<ol>
+  <li>Item 1</li>
+    <ul>
+      <li>Item 1.1</li>
+      <li>Item 1.2</li>
+    </ul>
+  <li>Item 2</li>
+  <li>Item 3</li>
+    <ol>
+      <li>Item 3.1</li>
+      <li>Item 3.2</li>
+        <ul>
+          <li>Item 3.2.1</li>
+          <li>Item 3.2.2</li>
+          <li>Item 3.2.3</li>
+        </ul>
+      <li>Item 3.3</li>
+    </ol>
+  <li>Item 4</li>
+</ol>
+```
+
+---
+
+<strong>Lista aninhada</strong>
+<ol>
+  <li>Item 1</li>
+    <ul>
+      <li>Item 1.1</li>
+      <li>Item 1.2</li>
+    </ul>
+  <li>Item 2</li>
+  <li>Item 3</li>
+    <ol>
+      <li>Item 3.1</li>
+      <li>Item 3.2</li>
+        <ul>
+          <li>Item 3.2.1</li>
+          <li>Item 3.2.2</li>
+          <li>Item 3.2.3</li>
+        </ul>
+      <li>Item 3.3</li>
+    </ol>
+  <li>Item 4</li>
+</ol>
+
+---
+
+<br>
+
+#### **6. Tabelas**
+
+Tabelas são formas de **representar uma densidade de elementos**, de modo que vários dados podem ser relacionados facilmente ao se comparar a posição deles em uma tabela em relação aos demais.
+
+
+No HTML, as tabelas são usadas para armazenar dados de forma estruturada, bem como servir de base para gráficos, tabulações e requisições baseadas em estrutura.
+
+As principais tags envolvidas são:
+
+```html
+<table> - Inicializa a tabela
+<tr> - Linha da tabela
+<td> - Coluna da tabela
+<th> - Cabeçalho semântico da coluna
+<!--
+  OBS: No cabeçalho é interessante adicionar o ESCOPO que ele representa, através do atributo "scope", assim, os navegadores podem otimizar a geração da tabela.
+  P.Ex.: <th scope="col">//<th scope="row">
+-->
+```
+Um exemplo rápido:
+
+```html
+<table border="">
+  <tr>
+    <th scope="col">Atividade</th>
+    <th scope="col">Responsável</th>
+  </tr>
+  <tr>
+    <td>Fazer café</td>
+    <td>Stallone</td>
+  </tr>
+  <tr>
+    <td>Buscar bugs</td>
+    <td>Shie</td>
+  </tr>
+  <tr>
+    <td>Criar algotirmos</td>
+    <td>HL</td>
+  </tr>
+</table>
+```
+
+---
+
+<table border="">
+  <tr>
+    <th scope="col">Atividade</th>
+    <th scope="col">Responsável</th>
+  </tr>
+  <tr>
+    <td>Fazer café</td>
+    <td>Stallone</td>
+  </tr>
+  <tr>
+    <td>Buscar bugs</td>
+    <td>Shie</td>
+  </tr>
+  <tr>
+    <td>Criar algotirmos</td>
+    <td>HL</td>
+  </tr>
+</table>
+
+---
+
+Um detalhe interessante é a **ordem de aninhamento dos elementos**, que facilita a leitura e construção da tabela; essa ordem deve ser: `<tr> => <td>` e não o contrário, assim os dados são primeiro reunidos em linhas, e depois em colunas.
+
+**Melhorando as tabelas:**
+
+Algo comum em tablelas é a categorização de conteúdos, que pode ser feita a nível de dados, repetindo um mesmo valor a cada linha, ou a nível visual, compilando as linhas num mesmo bloco. Para fazer isso utiliza-se o atributo `rowspan` ou `colspan` para o caso de colunas.
+
+Por exemplo:
+
+```html
+<table border>
+  <tr>
+    <th scope = "col">Categoria</th>
+    <th scope = "col">Item</th>
+    <th scope = "col" colspan=2>Preço</th>
+  </tr>
+  <tr>
+    <td rowspan = 3>Finanças</td>
+    <td>Aluguel</td>
+    <td>R$ 500,00</td>
+    <td>50%</td>
+  </tr>
+  <tr>
+    <td>Água</td>
+    <td>R$ 120,00</td>
+    <td>20%</td>
+  </tr>
+  <tr>
+    <td>Luz</td>
+    <td>R$ 180,00</td>
+    <td>30%</td>
+  </tr>
+  <tr>
+    <td colspan = 2>Alimentação</td>
+    <td>R$ 700,00</td>
+    <td>100%</td>
+  </tr>
+<table>
+```
+
+---
+
+<table border>
+  <tr>
+    <th scope = "col">Categoria</th>
+    <th scope = "col">Item</th>
+    <th scope = "col" colspan=2>Preço</th>
+  </tr>
+  <tr>
+    <td rowspan = 3>Finanças</td>
+    <td>Aluguel</td>
+    <td>R$ 500,00</td>
+    <td>50%</td>
+  </tr>
+  <tr>
+    <td>Água</td>
+    <td>R$ 120,00</td>
+    <td>20%</td>
+  </tr>
+  <tr>
+    <td>Luz</td>
+    <td>R$ 180,00</td>
+    <td>30%</td>
+  </tr>
+  <tr>
+    <td colspan = 2>Alimentação</td>
+    <td>R$ 700,00</td>
+    <td>100%</td>
+  </tr>
+<table>
+
+---
+
+**Importante:** para o "*col/row-span*" funcionar, é necessário que a coluna/linha seguinte seja retirada da tabela, para não causar desalinhamento dos dados.
+
+**Sobre a semântica adequada**
+
+Além dos elementos visuais, existem tags específicas de semântica no HTML, sendo elas:
+
+```html
+<thead> - Semântica de cabeçalho
+<tbody> - Semântica de corpo
+<tfoot> - Semântica de rodépe
+<caption> - Título semântico-visual da tabela
+```
+
+Exemplo:
+
+<table border = "">
+<caption>Tabela de notas dos alunos</caption>
+
+<thead>
+  <tr>
+    <th scope="col">Matéria</th>
+    <th scope="col">Aluno</th>
+    <th scope="col" colspan=2>Nota</th>
+  </tr>
+</thead>
+
+<tbody>
+<tr>
+  <td rowspan=3>Matemática</td>
+  <td>Stallone</td>
+  <td>70</td>
+</tr>
+<tr>
+  <td>HL</td>
+  <td>20</td>
+</tr>
+<tr>
+  <td>Shie</td>
+  <td>100</td>
+</tr>
+<tr>
+  <td rowspan=3>Português</td>
+  <td>Stallone</td>
+  <td>40</td>
+</tr>
+<tr>
+  <td>HL</td>
+  <td>90</td>
+</tr>
+<tr>
+  <td>Shie</td>
+  <td>100</td>
+</tr>
+<tr>
+  <td rowspan=3>Programação</td>
+  <td>Stallone</td>
+  <td>20</td>
+</tr>
+<tr>
+  <td>HL</td>
+  <td>70</td>
+</tr>
+<tr>
+  <td>Shie</td>
+  <td>100</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+  <th scope="row" colspan=2>Média global</th>
+  <td>67,7</td>
+</tr>
+</tfoot>
+
+</table>
+
+<br>
+
+#### **7. Formulários**
 
 Formulários são elementos que o usuário pode interagir de modo a **inserir de dados dentro da página**, dados que podem ser capturados e tratados por Scripts.
 
@@ -211,6 +548,8 @@ Elementos do formulário que são interativos para o usuário da página
 <textarea>Região dedicada a textos grandes</textarea>
 ```
 
+<br>
+
 ### Exemplos de uso das tags
 
 - [Exemplo geral](./../examples/ex_html_basico_exemplo_geral.html)
@@ -218,6 +557,7 @@ Elementos do formulário que são interativos para o usuário da página
 - [Estrutura de mídia básica](./../examples/ex_html_basico_midia.html)
 - [Estrutura de containers básica](./../examples/ex_html_basico_containers.html)
 - [Estrutura de metadados básica](./../examples/ex_html_basico_metadados.html)
+- [Estrutura de listas básica](./../examples/ex_html_basico_listas.html)
 - [Estrutura de formulário básica](./../examples/ex_html_basico_formulario.html)
 
 ---
