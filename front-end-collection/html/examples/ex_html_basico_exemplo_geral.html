@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stallone L. de Souza">
+    <meta name="description" content="Desafio conquer - Currículo próprio">
+    <title>Desafio CONQUER - Currículo - HTML</title>
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+        }
+
+        body {
+        background: #edf2f4;
+        color: #2b2d42;
+        -webkit-font-smoothing: antialiased;
+        }
+
+        body,
+        input,
+        textarea,
+        button {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        }
+
+        a {
+        font-weight: 700;
+        color: #2b2d42;
+        
+        transition: color 0.2s;
+        }
+        a:hover {
+        color: #2b2d42c4;
+        }
+
+        main {
+        width: 100%;
+        max-width: 800px;
+
+        margin: 0 auto;
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        }
+
+        img {
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+
+        object-fit: cover;
+        }
+
+        h1 {
+        margin: 1rem 0;
+        }
+
+        p {
+        text-align: center;
+        }
+
+        .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 2rem;
+        }
+
+        .links a {
+        margin-bottom: 0.5rem;
+        }
+
+        h2 {
+        margin-top: 2rem;
+        font-size: 1rem;
+        }
+
+        table {
+        margin: 2rem 0;
+        }
+
+        table caption {
+        font-weight: 700;
+        }
+
+        table th,
+        table td {
+        border: 1px solid #000;
+        padding: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <img src="./../assets/ex_html_basico_exemplo_geral_PERFIL.jpeg" alt="Imagel de perfil de Stallone LS - Jovem programador fullstack" />
+
+        <h1>Stallone L.S.</h1>
+        <h3>Discente em Eng. de software</h3>
+
+        <p>Jovem estudante de Engenharia de Software, interessado nos campos de programção back-end e mobile, com enfoque na segurança da informação</p>
+
+        <ul>
+            <li>JavaScript</li>
+            <li>HTML </li>
+            <li>CSS</li>
+            <li>NodeJS</li>
+        </ul>
+
+        <table>
+            <caption>Linguagens que conheço</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Linguagem</th>
+                    <th scope="col">Início do aprendizado</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>JavaScript</th>
+                    <th>jun/22</th>
+                    <th>Aprendendo sobre async</th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <th>Mai/23</th>
+                    <th>Aprendendo sobre os móduloo básicos</th>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <th>Jul/23</th>
+                    <th>Se preparando para iniciar essa jornada</th>
+                </tr>
+            </tbody>
+
+            <tfoot></tfoot>
+        </table>
+
+        <div class="links">
+          <a href="https://www.linkedin.com/in/stallone-souza/" target="_blank">Linkedin</a>
+          <a href="https://github.com/stallone-dev" target="_blank">Github</a>
+          <a href="mailto:stallone.job@gmail.com" target="_blank">stallone.job@gmail.com</a>
+        </div>
+    </main>
+</body>
+</html>
