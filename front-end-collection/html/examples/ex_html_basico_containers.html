@@ -49,5 +49,49 @@
         <span>Container de conteúdo inline</span>
     </footer>
 
+    <!---- Container para conteúdo detalhado-->
+    <h3>exemplo de sumário com detalhes</h3>
+    <details>
+        <summary>Exemplo de cabeçalho a ser expandido</summary>
+        Este é um conteúdo oculto, exibido somente após interagir<br>
+        Posso adicionar vários conteúdos aqui, como tabelas:<br>
+
+        <table border="">
+            <caption>Exemplo de tabela semântica</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Usuário</th>
+                    <th scope="col">Sistema</th>
+                    <th scope="col">Custo/mês</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3">Stallone</td>
+                    <td>Totvs</td>
+                    <td>R$ 30,00</td>
+                </tr>
+                <tr>
+                    <td>AppSheet</td>
+                    <td>$ 20,00</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>R$ 0,00</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">TOTAL</th>
+                    <td>R$ 150,00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </details>
+
+
+
 </body>
 </html>
