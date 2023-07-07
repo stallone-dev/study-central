@@ -650,7 +650,6 @@ Exemplo:
 - [Estrutura textual básica](./../examples/ex_html_basico_elementos_textuais.html)
 - [Estrutura de mídia básica](./../examples/ex_html_basico_midia.html)
 - [Estrutura de containers básica](./../examples/ex_html_basico_containers.html)
-- [Estrutura de metadados básica](./../examples/ex_html_basico_metadados.html)
 - [Estrutura de listas básica](./../examples/ex_html_basico_listas.html)
 - [Estrutura de formulário básica](./../examples/ex_html_basico_formulario.html)
 
