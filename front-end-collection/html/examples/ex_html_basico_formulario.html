@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stallone L. de Souza">
+    <meta name="description" content="Exemplos de uso de formulários em HTML">
+    <title>Exemplo de uso de formulários no HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Formulários básicos</h1>
+    </header>
+
+    <main>
+        <h2>Formulário básico - Conquer - Mão na massa M4-01</h2>
+        <form>
+            <label>Seu nome: </label>
+            <input type="text" placeholder="Ex: Raianny">
+
+            <label>Sua senha: </label>
+            <input type="password" placeholder="Ex 12@3@4@my_pass">
+
+            <label>Sobre você: </label>
+            <textarea placeholder="Um longo texto cheio de quebras de parágrafo e páginas de livros"></textarea>
+            <br><br>
+            <label>Seu e-mail: </label>
+            <input type="email">
+            <label>Seu telefone: </label>
+            <input type="tel">
+            <label>Seu número favorito: </label>
+            <input type="number">
+            <br><br>
+            <label>Exemplo do type "pesquisa": </label>
+            <input type="search">
+            <label>Insira uma data: </label>
+            <input type="date">
+            <label>Insira uma cor: </label>
+            <input type="color">
+            <br><br>
+            <label>Qual seu nível de conhecimento: </label>
+            <input type="range" min="-15" max="200">
+            <br><br>
+
+            <fieldset>
+            <legend>Como vai você?</legend>
+            <input type="checkbox" id="tudocerto" value="bem" name="tudocerto" checked="">
+            <label for="tudocerto">ok</label>
+            <br>
+            <select name="gender">
+                <option value="masculino">V1</option>
+                <option value="femino">V2</option>
+                <option value="fluido">V3</option>
+                <option value="neutro">V4</option>
+                <option value="não-informado" selected="">Prefiro não informar</option>
+            </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Título do campo do formulário</legend>
+              
+                <input type="radio" value="ok" name="qt_1" id="qt_1_id_1" checked>
+                <label for="qt_1_id_1">Opção 1</label>
+                <input type="radio" value="not_ok" name="qt_1" id="qt_1_id_2">
+                <label for="qt_1_id_2">Opção 2</label>
+                <br>
+                
+                <input type="checkbox" name="check" id="check_1" value="ok1">
+                <label for="check_1">Selecao 1</label>
+                <input type="checkbox" name="check" id="check_2" value="ok2" required>
+                <label for="check_2">Selecao 2</label>
+                <input type="checkbox" name="check" id="check_3" value="ok3" checked>
+                <label for="check_3">Selecao 3</label>
+                <br>
+
+
+                <input type="submit" value="Enviar para o servidor">
+                <input type="reset" value="Redefinir dados">
+                
+            </fieldset>
+
+            <fildset>
+                <legend>Exemplo de pattern</legend>
+              
+                <label>Insira a senha:</label>
+                <input type="password" pattern=".{8,}" title="Insira 8 ou mais digitos">
+                <input type="submit" value="Enviar_senha">
+            </fildset>
+
+        </form>
+        <hr>
+    </main>
+</body>
+</html>

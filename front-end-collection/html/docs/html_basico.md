@@ -69,7 +69,7 @@ As TAGS do HTML podem ser divididas em 4 categorias:
 
 São elas:
 
-| Tag      | Finalidade                                                       |
+|   Tag    | Finalidade                                                       |
 | :------: | ---------------------------------------------------------------- |
 | \<head>  | Container dos metadados                                          |
 | \<meta>  | Elemento genérico para agregar metadados                         |
@@ -160,13 +160,13 @@ TAGs dedicadas a estruturar grupos de textos com um mesmo propósito
 
 Exemplos são:
 
-| TAG                 | Finalidade                         |
-| :-----------------: | ---------------------------------- |
-| \<p>                | Parágrafo simples                  |
-| \<blockquote>       | Citação em bloco                   |
-| \<dl>, \<dt>, \<dd> | Itens de [definição de dicionário](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dl)|
-|\<menu>, \<ol>, \<ul>, \<li>|Elementos de [tabulação simples](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element#conte%C3%BAdo_tabulado)|
-|\<caption>, \<table>, \<thead>, \<tbody>, \<col>, \<td>, \<th>, \<tr>|Elementos de [tabulação avançada](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element#conte%C3%BAdo_tabulado)|
+|                                  TAG                                  | Finalidade                                                                                                          |
+| :-------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------- |
+|                                 \<p>                                  | Parágrafo simples                                                                                                   |
+|                             \<blockquote>                             | Citação em bloco                                                                                                    |
+|                          \<dl>, \<dt>, \<dd>                          | Itens de [definição de dicionário](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dl)                    |
+|                     \<menu>, \<ol>, \<ul>, \<li>                      | Elementos de [tabulação simples](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element#conte%C3%BAdo_tabulado)  |
+| \<caption>, \<table>, \<thead>, \<tbody>, \<col>, \<td>, \<th>, \<tr> | Elementos de [tabulação avançada](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element#conte%C3%BAdo_tabulado) |
 
 
 ***Conteúdos textuais inline***
@@ -519,34 +519,128 @@ Exemplo:
 
 #### **7. Formulários**
 
-Formulários são elementos que o usuário pode interagir de modo a **inserir de dados dentro da página**, dados que podem ser capturados e tratados por Scripts.
+Formulários são elementos que possibilitam o usuário injetar dados para o front-end através de **"inputs" interativos**, como caixas de diálogo, botões, barrinhas e caixas de seleção.
 
-As [TAGS de formulário](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element#formul%C3%A1rios) também são divididas em 2 sub-grupos:
+Todos esses elementos fazem parte do conjunto de ferramentas que potencializa o poder dos usuários dentro de uma página web, uma vez que formulários, sejam eles explícitos ou implícitos (*através de listeners*), e servem de gatilho para desencadear ações e fluxos de dados.
 
-***Espaços de formulário***
+***Estrutura do formulário***
 
-Agrupamentos que definem a região do formulário e as regiões internas ao formulário
+Um formulário é construído dentro do container `<form> </form>`, que representa o espaço semântio do formulário.
 
-São elas:
+Dentro do formulário, os principais elementos podem ser divididos em 4 grupos principais:
+
+|    tag     | Propósito                  |
+| :--------: | -------------------------- |
+| `<input>`  | Entrada principal de dados |
+| `<label>`  | "Título" do input          |
+| `<select>` | Seleção de opção           |
+| `<button>` | Botão de seleção           |
+
+Dentro da tag `<input>` pode-se adicionar alguns atributos para enriquecer os dados coletados, para isso, adicona-se a tag `type = ""` para informar o tipo do input desejado. 
+São atributos comuns:
+
+| Atributo do type | Propósito                                           | Exemplo     |
+| :--------------: | --------------------------------------------------- | ----------- |
+|      `text`      | Caixa de texto-curto padrão                         | abcde       |
+|     `number`     | Caixa de texto para números                         | 12345       |
+|     `search`     | Caixa de texto otimizado para pesquisas             | google      |
+|     `email`      | Otimização para e-mails (com validação)             | a@b.com     |
+|      `tel`       | Otimização para números de telefone (sem validação) | +55 83 9    |
+|      `date`      | Otimização para datas (com validação)               | 01/01/23    |
+|     `color`      | Otimização para cores                               | red         |
+|    `password`    | Caixa de texto especial para SENHAS                 | \*\*\*\**   |
+|     `range`      | Barra de seleção de valores                         | \|--X----\| |
+
+Além do atributo "type", existem outros atributos interessantes com funcionalidades específicas, por exemplo:
 
 ```html
-<form>Região do formulário</form>
-<fieldset>sub-região do formulário</fieldset>
-<datalist>Grupo de opções</datalist>
+<input type="range" min=0 max=100> <!-- Atributos 'min' e 'max' determinam a faixa de valores para os types 'number' e 'range' -->
+
 ```
 
-***Elementos de formulário***
+***Entrando na parte de botões do formulário***
 
-Elementos do formulário que são interativos para o usuário da página
+No HTML, um tipo de atributo importante da tag "input" é o tipo "botões", que são elementos selecionáveis que representam uma escolha, ou conjunto de escolhas.
+
+São representados por caixinhas marcáveis, como os famosos **to-do's**, caixas de decisão única, como as "**opções**" e botões em si, como o botão "enviar" ou "**increver-se**"
+
+São exemplos de usos dos botões:
 
 ```html
-<button>Botão cliclável</button>
-<input>Entrada de dados genérica</input>
-<meter>Faixa de valores</meter>
-<select>Botão de seleção de 1 item</select>
-<option>Itens dentro da seleção</option>
-<textarea>Região dedicada a textos grandes</textarea>
+<fieldset>
+  <legend>Título do campo do formulário</legend>
+
+  <!--Exemplo do tipo "radio", comumente usado para seleção de opção única-->
+  <input type="radio" value="ok" name="qt_1" id="qt_1_id_1" checked>
+  <label for="qt_1_id_1">Opção 1</label>
+  <input type="radio" value="not_ok" name="qt_1" id="qt_1_id_2">
+  <label for="qt_1_id_2">Opção 2</label>
+  <!--É atraveś do atributo "name" que a seleção marca a atual e desmarca as demais-->
+
+  <!--Exemplo do tipo "checkbox", usado para selecionar vários elementos-->
+  <input type="checkbox" name="check" id="check_1" value="ok1">
+  <label for="check_1">Selecao 1</label>
+  <input type="checkbox" name="check" id="check_2" value="ok2">
+  <label for="check_2">Selecao 2</label>
+  <input type="checkbox" name="check" id="check_3" value="ok3" checked>
+  <label for="check_3">Selecao 3</label>
+
+  <!--Exemplo de botão de envio e reset de formulário-->
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Recomeçar">
+
+</fieldset>
 ```
+---
+
+<fieldset>
+  <legend>Título do campo do formulário</legend>
+
+  <!--Exemplo do tipo "radio", comumente usado para seleção de opção única-->
+  <input type="radio" value="ok" name="qt_1" id="qt_1_id_1" checked>
+  <label for="qt_1_id_1">Opção 1</label>
+  <input type="radio" value="not_ok" name="qt_1" id="qt_1_id_2">
+  <label for="qt_1_id_2">Opção 2</label>
+  <!--É atraveś do atributo "name" que a seleção marca a atual e desmarca as demais-->
+
+  <!--Exemplo do tipo "checkbox", usado para selecionar vários elementos-->
+  <input type="checkbox" name="check" id="check_1" value="ok1">
+  <label for="check_1">Selecao 1</label>
+  <input type="checkbox" name="check" id="check_2" value="ok2">
+  <label for="check_2">Selecao 2</label>
+  <input type="checkbox" name="check" id="check_3" value="ok3" checked>
+  <label for="check_3">Selecao 3</label>
+
+  <!--Exemplo de botão de envio e reset de formulário-->
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Recomeçar">
+</fieldset>
+
+---
+
+***Além da criação do input, também é importante validá-lo***
+
+A validação do input ocorre através do atributo `pattern` junto de um `RegEx`, utilizado para validar dados que o usuário preenche manualmente, como textos, senhas, url, número e/ou data.
+
+Exemplo:
+
+```html
+<fieldset>
+  <legend>Exemplo de pattern</legend>
+
+  <label>Insira a senha:</label>
+  <input type="password" pattern=".{8,}" title="Insira 8 ou mais digitos">
+  <input type="submit" value="Enviar">
+</fieldset>
+```
+
+<fieldset>
+  <legend>Exemplo de pattern</legend>
+
+  <label>Insira a senha:</label>
+  <input type="password" pattern=".{8,}" title="Insira 8 ou mais digitos">
+  <input type="submit" value="Enviar">
+</fieldset>
 
 <br>
 
